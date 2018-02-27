@@ -16,11 +16,10 @@ namespace MovieHistory.Data
         }
         // For DbSets: Include only the DbSets of the tables that you believe you are going to need to query
 
-        public DbSet<Movie> Movie { get; set; }
 
-        public DbSet<MovieUser> MovieUser { get; set; }
-
-        public DbSet<Recommendation> Recommendation { get; set; }
+            public DbSet<Movie> Movie { get; set; }
+            public DbSet<MovieUser> MovieUser { get; set; }
+            public DbSet<Recommendation> Recommendation { get; set;  }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

@@ -1,4 +1,5 @@
-$("#movieGrid").on("click", evt => {
+
+﻿$("#movieGrid").on("click", evt => {
     const apiId = evt.target.parentElement.id.split("--")[1]
     const movie = MovieStore.movies.find(m => parseInt(apiId) === m.id)
 
